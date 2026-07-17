@@ -31,6 +31,20 @@ return {
       automatic_installation = true,
     },
   },
+  {
+  'WhoIsSethDaniel/mason-tool-installer.nvim',
+  dependencies = { 'williamboman/mason.nvim' },
+  config = function()
+    require('mason-tool-installer').setup({
+      ensure_installed = {
+        'lua-language-server',
+        'stylua',
+        'pyright',
+        'black',
+      },
+    })
+  end,
+  },
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
