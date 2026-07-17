@@ -12,7 +12,24 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- LSP Servers
+        "lua-language-server",
+        "html-lsp",
+        "css-lsp",
+        "typescript-language-server",
+        "pyright"
 
+        -- Formatters / Linters
+        "prettier",
+        "stylua",
+        "eslint-lsp",
+      },
+    },
+  },
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
