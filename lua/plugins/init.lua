@@ -15,19 +15,6 @@ return {
   {
     "williamboman/mason.nvim",
     opts = {
-      ensure_installed = {
-        -- LSP Servers
-        "lua-language-server",
-        "html-lsp",
-        "css-lsp",
-        "typescript-language-server",
-        "pyright",
-
-        -- Formatters / Linters
-        "prettier",
-        "stylua",
-        "eslint-lsp",
-      },
       automatic_installation = true,
     },
   },
@@ -42,6 +29,9 @@ return {
         'pyright',
         'black',
       },
+      -- Automatically check and install missing tools on startup
+      auto_update = false,
+      run_on_start = true,
     })
   end,
   },
