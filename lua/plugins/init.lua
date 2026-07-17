@@ -28,6 +28,7 @@ return {
         "stylua",
         "eslint-lsp",
       },
+      automatic_installation = true,
     },
   },
   -- test new blink
