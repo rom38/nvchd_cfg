@@ -21,7 +21,7 @@ return {
         "html-lsp",
         "css-lsp",
         "typescript-language-server",
-        "pyright"
+        "pyright",
 
         -- Formatters / Linters
         "prettier",
